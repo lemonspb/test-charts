@@ -1,10 +1,10 @@
 import React from 'react';
-import {Doughnut} from 'react-chartjs-2';
+import {Polar} from 'react-chartjs-2';
 
 
 
 
-const DoughnutChart = (props) => {
+const PolarChart = (props) => {
 
     const colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6', 
     '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',
@@ -34,9 +34,9 @@ const DoughnutChart = (props) => {
     };
     return (
       <div className='chart'>
-        <Doughnut data={data} />
+        <Polar data={data} />
       </div>
     );
   }
 
-  export default DoughnutChart
+  export default PolarChart

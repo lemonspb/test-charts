@@ -2,7 +2,7 @@ import React from "react";
 import MetrikaServiсe from "../../Services";
 
 export const ServiceContext = React.createContext({
-    MetrikaServiсe: new MetrikaServiсe(),
+  MetrikaServiсe: new MetrikaServiсe(),
 });
 
 export const ServiceProvider = (props) => {
@@ -11,7 +11,7 @@ export const ServiceProvider = (props) => {
   return (
     <ServiceContext.Provider
       value={{
-        metrikaServiсe
+        metrikaServiсe,
       }}
     >
       {props.children}

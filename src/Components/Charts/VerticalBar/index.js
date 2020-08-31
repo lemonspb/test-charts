@@ -11,7 +11,7 @@ const  VerticalChart = (props) => {
         labels: props.labels,
         datasets: [
           {
-            label: 'My First dataset',
+            label: props.title,
             backgroundColor: 'rgba(255,99,132,0.2)',
             borderColor: 'rgba(255,99,132,1)',
             borderWidth: 1,
@@ -23,8 +23,7 @@ const  VerticalChart = (props) => {
       };
 
     return (
-      <div>
-        <h2>Bar Example (custom size)</h2>
+      <div className='chart'>
         <Bar
           data={data}
           width={100}

@@ -8,7 +8,7 @@ import {HorizontalBar} from 'react-chartjs-2';
         labels: [ ...props.labels ],
         datasets: [
           {
-            label: 'My First dataset',
+            label: props.title,
             backgroundColor: 'rgba(255,99,132,0.2)',
             borderColor: 'rgba(255,99,132,1)',
             borderWidth: 1,
@@ -21,7 +21,7 @@ import {HorizontalBar} from 'react-chartjs-2';
       
 
     return (
-      <div>
+      <div className='chart'>
         <HorizontalBar data={data} />
       </div>
     );
