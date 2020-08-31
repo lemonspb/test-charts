@@ -72,7 +72,7 @@ function App() {
           {loadingOsReport ? (
             <Spin size={"large"} />
           ) : (
-            <LineChart labels={labels} metrics={data} />
+            <LineChart labels={labels} metrics={data} title='Os report' />
           )}
         </div>
         <Title>Age report</Title>
