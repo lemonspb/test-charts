@@ -9,7 +9,7 @@ import {Line} from 'react-chartjs-2';
         labels: props.labels,
         datasets: [
           {
-            label: 'My First dataset',
+            label: props.title,
             fill: false,
             lineTension: 0.1,
             backgroundColor: 'rgba(75,192,192,0.4)',
@@ -33,7 +33,6 @@ import {Line} from 'react-chartjs-2';
       };
     return (
       <div className='chart'>
-        <h2>Line Example</h2>
         <Line data={data} />
       </div>
     );
