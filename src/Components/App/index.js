@@ -72,7 +72,7 @@ function App() {
           {loadingOsReport ? (
             <Spin size={"large"} />
           ) : (
-            <PolarChart labels={labels} metrics={data} />
+            <LineChart labels={labels} metrics={data} />
           )}
         </div>
         <Title>Age report</Title>
@@ -80,7 +80,7 @@ function App() {
           {loadingAgeReport ? (
             <Spin size={"large"} />
           ) : (
-            <LineChart labels={labelsAge} metrics={dataAge}   title='Age'/>
+            <LineChart labels={labelsAge} metrics={dataAge}  title='Age'/>
           )}
           <div className="app__chunk">
             {loadingAgeReport ? (
